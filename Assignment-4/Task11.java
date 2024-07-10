@@ -6,17 +6,19 @@ public class Task11{
          int N=sc.nextInt();  
          int sum=0;
          int div=0;
-        for(int i=1;i<=N;i++){
+         int i=1;
          
+        while(i<=N){
             if  (N%i==0){
               div++;
               if(i!=N){
                 sum+=div;
               }
             }
+            i++;
         }
-        //For loop shesh
-        //Print shuru
+        //While loop ended
+        //Print started
         if (div>3){
             System.out.println(N+ " is not a prime number");
           }
@@ -24,10 +26,10 @@ public class Task11{
             System.out.println(N+ " is a prime number");
           }
           if (sum==N){
-            System.out.println(N+ " is a perfect number "); 
+            System.out.println(N+ " is a perfect number ");
           }
           else{  
             System.out.println(N+ " is not a perfect number");
           }
         }
-}
+    }
