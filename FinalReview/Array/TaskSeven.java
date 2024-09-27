@@ -3,9 +3,10 @@ public class TaskSeven {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = {6, 13, 28, 17, 3, 9, 11, 23, 10, 29, 12, 7};
-
+       
         System.out.println("Prime Numbers");
         for (int i = 0; i < arr.length; i++) {
+
               int divisors = 0;
               for (int j = 1; j <= arr[i]; j++) {
                 if (arr[i] % j == 0) {
